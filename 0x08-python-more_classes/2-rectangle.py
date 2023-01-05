@@ -1,15 +1,13 @@
 #!/usr/bin/python3
-'''Defining a rectangle using class'''
+'''A class that defines a rectangle'''
 
 
 class Rectangle:
-    '''Using class to repesent a rectangle'''
-    number_of_instances = 0
+    '''Representing a rectangle'''
 
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
-        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -42,21 +40,3 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return (0)
         return ((self.__width * 2) + (self.__height * 2))
-
-    def __str__(self) -> str:
-        if self.__width == 0 or self.__height == 0:
-            return ("")
-        rectangle = ""
-        for column in range(self.__height):
-            for row in range(self.__width):
-                rectangle += "#"
-            if column < self.__height - 1:
-                rectangle += "\n"
-        return (rectangle)
-
-    def __repr__(self):
-        return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
-
-    def __del__(self):
-        print("Bye rectangle...")
-        Rectangle.number_of_instances -= 1
