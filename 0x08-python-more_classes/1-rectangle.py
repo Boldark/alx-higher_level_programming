@@ -1,5 +1,9 @@
 #!/usr/bin/python3
+# A class defining a rectangle
+
+
 class Rectangle:
+    # A class representing a rectangle
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
