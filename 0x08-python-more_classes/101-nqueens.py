@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+'''Program to solve the Nqueens puzzle'''
+
+
 import sys
 
 
