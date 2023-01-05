@@ -1,5 +1,9 @@
 #!/usr/bin/python
+'''Defining a rectangle using class'''
+
+
 class Rectangle:
+    '''Using class to repesent a rectangle'''
     number_of_instances = 0
 
     def __init__(self, width=0, height=0):

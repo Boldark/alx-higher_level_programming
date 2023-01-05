@@ -1,5 +1,9 @@
 #!/usr/bin/python3
+'''Class to define a rectangle'''
+
+
 class Rectangle:
+    '''A clas representing a rectangle'''
     number_of_instances = 0
     print_symbol = "#"
 
